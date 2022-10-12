@@ -67,7 +67,16 @@ jobs:
     # - run: |
     #   echo "Run, Build Application using script"
     #   ./location_of_script_within_repo/buildscript.sh
+    
+    - run: |
+      echo "java version"
+      java -version
 
+      uses: actions/setup-java@v3
+      with:
+          java-version: 16
+          distribution: 'microsoft'
+     
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
       with:
