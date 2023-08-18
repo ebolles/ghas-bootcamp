@@ -2,6 +2,8 @@ name: HawkScan
 on:
   push:
   #pull_request:
+  #schedule
+   # - cron: '30 5,17 * * *'
 jobs:
   hawkscan:
     name: HawkScan
