@@ -7,7 +7,12 @@ app:
   # -- The url of your application to scan --
   host: http://testphp.vulnweb.com # (required)
 
-
+tags:
+  - name: _STACKHAWK_GIT_COMMIT_SHA
+    value: ${COMMIT_SHA}
+  - name: _STACKHAWK_GIT_BRANCH
+    value: ${BRANCH_NAME}
+    
 # -- Customized Configuration for GraphQL/SOAP/OpenAPI, add here --
   # Configuration Docs: https://docs.stackhawk.com/hawkscan/configuration/
 
